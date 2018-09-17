@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule landsat20160820/(.*)/(.*)/(.*)\.png$ "/cgi-bin/mapserv.exe?map=/ms4w/vhosts/gis.diskelper.dumaikota.go.id/data/landsat.map&mode=tile&layers=Landsat20160820&tilemode=gmap&tile=$2 $3 $1" [L]
+RewriteRule 8bit2/(.*)/(.*)/(.*)\.png$ "/cgi-bin/mapserv.exe?map=/ms4w/vhosts/gis.diskelper.dumaikota.go.id/data/landsat.map&mode=tile&layers=8bit2&tilemode=gmap&tile=$2 $3 $1" [L]
+RewriteRule band5/(.*)/(.*)/(.*)\.png$ "/cgi-bin/mapserv.exe?map=/ms4w/vhosts/gis.diskelper.dumaikota.go.id/data/landsat.map&mode=tile&layers=band5&tilemode=gmap&tile=$2 $3 $1" [L]
+RewriteRule band4/(.*)/(.*)/(.*)\.png$ "/cgi-bin/mapserv.exe?map=/ms4w/vhosts/gis.diskelper.dumaikota.go.id/data/landsat.map&mode=tile&layers=band4&tilemode=gmap&tile=$2 $3 $1" [L]
+RewriteRule darimenukecil24bit/(.*)/(.*)/(.*)\.png$ "/cgi-bin/mapserv.exe?map=/ms4w/vhosts/gis.diskelper.dumaikota.go.id/data/landsat.map&mode=tile&layers=darimenukecil24bit&tilemode=gmap&tile=$2 $3 $1" [L]
+RewriteRule potongan/(.*)/(.*)/(.*)\.png$ "/cgi-bin/mapserv.exe?map=/ms4w/vhosts/gis.diskelper.dumaikota.go.id/data/landsat.map&mode=tile&layers=potongan&tilemode=gmap&tile=$2 $3 $1" [L]
+#RewriteRule (.*)/(.*)/(.*)/(.*)\.png$ "/cgi-bin/mapserv.exe?map=/ms4w/vhosts/gis.diskelper.dumaikota.go.id/data/landsat.map&mode=tile&layers=$1&tilemode=gmap&tile=$3 $4 $2" [L]
