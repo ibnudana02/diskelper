@@ -1,0 +1,218 @@
+MAP
+  DEFRESOLUTION 96
+  EXTENT 548023.550179103 43484.9999999647 911476.44980741 275715
+  FONTSET "font.list"
+  IMAGETYPE "png24"
+  NAME "MS"
+  RESOLUTION 96
+  SHAPEPATH ""
+  SIZE 843 539
+  STATUS ON
+  SYMBOLSET "symbols.sym"
+  UNITS METERS
+
+  OUTPUTFORMAT
+    NAME "png24"
+    MIMETYPE "image/png"
+    DRIVER "AGG/PNG"
+    EXTENSION "png"
+    #IMAGEMODE RGB
+    #TRANSPARENT FALSE
+    IMAGEMODE RGBA
+    TRANSPARENT TRUE
+  END # OUTPUTFORMAT
+
+  OUTPUTFORMAT
+    NAME "print"
+    MIMETYPE "image/png"
+    DRIVER "AGG/PNG"
+    EXTENSION "png"
+    IMAGEMODE RGB
+    TRANSPARENT FALSE
+  END # OUTPUTFORMAT
+
+  PROJECTION
+    "proj=utm"
+    "zone=47"
+    "ellps=WGS84"
+    "towgs84=0,0,0,0,0,0,0"
+    "units=m"
+    "no_defs"
+  END # PROJECTION
+  LEGEND
+    KEYSIZE 20 10
+    KEYSPACING 5 5
+    LABEL
+      SIZE MEDIUM
+      OFFSET 0 0
+      SHADOWSIZE 1 1
+      TYPE BITMAP
+    END # LABEL
+    STATUS OFF
+  END # LEGEND
+
+  QUERYMAP
+    SIZE -1 -1
+    STATUS OFF
+    STYLE HILITE
+  END # QUERYMAP
+
+  SCALEBAR
+    INTERVALS 4
+    LABEL
+      SIZE MEDIUM
+      OFFSET 0 0
+      SHADOWSIZE 1 1
+      TYPE BITMAP
+    END # LABEL
+    SIZE 200 3
+    STATUS OFF
+    UNITS MILES
+  END # SCALEBAR
+
+  WEB
+    METADATA
+      "distance_units"	"MS_METERS"
+      "mapmanager_version"	"1.0.0.0"
+    END # METADATA
+  END # WEB
+
+  LAYER
+    DATA "LC08_L1TP_127059_20160820_20170322_01_T1_B2.img"
+    EXTENT 615885 43485 843615 275715
+    METADATA
+      "coordsys_name"	"DGN95 / UTM zone 47N"
+    END # METADATA
+    #NAME "LC08_L1TP_127059_20160820_20170322_01_T1_B2"
+    NAME "Landsat20160820"
+    PROJECTION
+      "proj=utm"
+      "zone=47"
+      "ellps=WGS84"
+      "towgs84=0,0,0,0,0,0,0"
+      "units=m"
+      "no_defs"
+    END # PROJECTION
+    STATUS ON
+    TILEITEM "location"
+    TYPE RASTER
+    UNITS METERS
+  END # LAYER
+  
+  
+  
+  LAYER
+    DATA "E:\\TA\\Satelit Baru\\untuk diupload\\1. Band 654 (1)\\1. band6\\band6.tif"
+    EXTENT 615885 43485 843615 275715
+    #EXTENT 0 0 7591 7741
+    NAME "8bit2"
+#    PROJECTION
+#      "AUTO"
+#    END # PROJECTION
+
+    PROJECTION
+      "proj=utm"
+      "zone=47"
+      "ellps=WGS84"
+      "towgs84=0,0,0,0,0,0,0"
+      "units=m"
+      "no_defs"
+    END # PROJECTION
+
+    STATUS ON
+    TILEITEM "location"
+    TYPE RASTER
+    UNITS METERS
+  END # LAYER
+  
+
+   LAYER
+    DATA "E:\\TA\\Satelit Baru\\untuk diupload\\1. Band 654 (1)\\2. band5\\band5.tif"
+    EXTENT 615885 43485 843615 275715
+	#EXTENT 0 0 7591 7741
+    NAME "band5"
+    PROJECTION
+      "AUTO"
+    END # PROJECTION
+
+	PROJECTION
+      "proj=utm"
+      "zone=47"
+      "ellps=WGS84"
+      "towgs84=0,0,0,0,0,0,0"
+      "units=m"
+      "no_defs"
+    END # PROJECTION
+	
+    STATUS ON
+    TILEITEM "location"
+    TYPE RASTER
+    UNITS METERS
+  END # LAYER
+  
+    LAYER
+    DATA "E:\\TA\\Satelit Baru\\untuk diupload\\1. Band 654 (1)\\3. band4\\band4.tif"
+    EXTENT 615885 43485 843615 275715
+	#EXTENT 0 0 7591 7741
+    NAME "band4"
+    PROJECTION
+      "AUTO"
+    END # PROJECTION
+    PROJECTION
+      "proj=utm"
+      "zone=47"
+      "ellps=WGS84"
+      "towgs84=0,0,0,0,0,0,0"
+      "units=m"
+      "no_defs"
+    END # PROJECTION
+	STATUS ON
+    TILEITEM "location"
+    TYPE RASTER
+    UNITS METERS
+  END # LAYER
+  
+  LAYER
+     DATA "E:\\TA\\Satelit Baru\\Landsat 8\\5. 2016-04-14 New\\1. Band Math\\5. Final (erdas imagine)\\darimenukecil24bit.img"
+    EXTENT 614385 43485 841815 275715
+    METADATA
+      "coordsys_name"	"DGN95 / UTM zone 47N"
+    END # METADATA
+    NAME "darimenukecil24bit"
+    PROJECTION
+      "proj=utm"
+      "zone=47"
+      "ellps=WGS84"
+      "towgs84=0,0,0,0,0,0,0"
+      "units=m"
+      "no_defs"
+    END # PROJECTION
+    STATUS ON
+    TILEITEM "location"
+    TYPE RASTER
+    UNITS METERS
+  END # LAYER
+  
+   LAYER
+    
+	DATA "E:\\TA\\Satelit Baru\\Landsat 8\\6. 2016-03-13 New\\1. Hasil Olahan Data\\1. Band Math ke Band\\potongan.img"
+    EXTENT 754095 174135 825735 247605
+    METADATA
+      "coordsys_name"	"DGN95 / UTM zone 47N"
+    END # METADATA
+    NAME "potongan"
+    PROJECTION
+      "proj=utm"
+      "zone=47"
+      "ellps=WGS84"
+      "towgs84=0,0,0,0,0,0,0"
+      "units=m"
+      "no_defs"
+    END # PROJECTION
+    STATUS ON
+    TILEITEM "location"
+    TYPE RASTER
+    UNITS METERS
+  END # LAYER 
+  
+END # MAP
